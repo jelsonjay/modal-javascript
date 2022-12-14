@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*======REST======*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+/*======VARIABLES=======*/
+:root {
+	--f-family: 'Poppins', sans-serif;
+	--clr-primary: hsl(52, 84%, 63%);
+}
+body {
+	background: rgba(19, 19, 23, 2.9);
+	font-family: var(--f-family);
+	overflow: hidden;
+	transition: all 0.3s linear;
+}
+main {
+	background-image: url('https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	/* filter: blur(6px); */
+}
+.center {
+	color: white;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: sans-serif;
+	color: #f0db4f;
+	margin: 40px;
+	text-transform: capitalize;
+}
+button {
+	margin: 0 auto;
+	height: 60px;
+	width: 500px;
+	background: #f0db4f;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.5rem;
+	color: #000;
+	cursor: pointer;
+	text-transform: uppercase;
+	animation: button 3s ease-out infinite normal;
+}
+/*---------Modal--------*/
+.main-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	display: none;
+}
+.modal {
+	background: white;
+	width: 70%;
+	padding: 30px;
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 22px;
+	font-family: var(--f-family);
+	animation: 0.5s pop-up;
+}
+/*------KEY FRAMES-------*/
+@keyframes pop-up {
+	0% {
+		top: -100px;
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+.X {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	font-size: 40px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+.X:hover {
+	transform: rotate(365deg);
+}
+main {
+	transition: 2s;
+}
+@keyframes button {
+	0% {
+		transform: scale(0.9);
+	}
+	25% {
+		transform: scale(2);
+	}
+	60% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(0.9);
+	}
+}
