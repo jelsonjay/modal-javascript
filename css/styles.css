@@ -93,7 +93,7 @@ button {
 		top: 50%;
 	}
 }
-.X {
+.close {
 	position: absolute;
 	right: 20px;
 	top: 5px;
@@ -101,7 +101,7 @@ button {
 	cursor: pointer;
 	transition: all 0.5s ease-in-out;
 }
-.X:hover {
+.close:hover {
 	transform: rotate(365deg);
 }
 main {

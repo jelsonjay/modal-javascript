@@ -1,7 +1,7 @@
 'use strict';
 let main = document.querySelector('.main-modal');
 let btn = document.querySelector('button');
-let X = document.querySelector('.X');
+let close = document.querySelector('.close');
 let myMain = document.querySelector('main');
 
 // display modal
@@ -10,7 +10,7 @@ btn.addEventListener('click', () => {
 	myMain.style.filter = 'blur(10px)';
 });
 
-X.addEventListener('click', () => {
+close.addEventListener('click', () => {
 	main.style.display = 'none';
 	myMain.style.filter = 'blur(0px)';
 });
