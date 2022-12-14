@@ -4,23 +4,21 @@ let btn = document.querySelector('button');
 let X = document.querySelector('.X');
 let myMain = document.querySelector('main');
 
-btn.addEventListener('click', show);
 // display modal
-function show() {
+btn.addEventListener('click', () => {
 	main.style.display = 'block';
 	myMain.style.filter = 'blur(10px)';
-}
-X.addEventListener('click', hiddenX);
-function hiddenX() {
+});
+
+X.addEventListener('click', () => {
 	main.style.display = 'none';
 	myMain.style.filter = 'blur(0px)';
-}
+});
 
 // hidden modal
-main.addEventListener('click', hiddenMain);
-function hiddenMain(e) {
+main.addEventListener('click', e => {
 	if (e.target.className == 'main-modal') {
 		main.style.display = 'none';
 		myMain.style.filter = 'blur(0px)';
 	}
-}
+});
