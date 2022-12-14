@@ -13,6 +13,8 @@
 :root {
 	--f-family: 'Poppins', sans-serif;
 	--clr-primary: hsl(52, 84%, 63%);
+	--cl-black: hsl(0, 0%, 0%);
+	--clr-white: hsl(0, 0%, 100%);
 }
 body {
 	background: rgba(19, 19, 23, 2.9);
@@ -30,7 +32,7 @@ main {
 	/* filter: blur(6px); */
 }
 .center {
-	color: white;
+	color: var(--clr-white);
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -43,7 +45,7 @@ h1 {
 	font-size: 2rem;
 	font-weight: 700;
 	font-family: sans-serif;
-	color: #f0db4f;
+	color: var(--clr-primary);
 	margin: 40px;
 	text-transform: capitalize;
 }
@@ -51,11 +53,11 @@ button {
 	margin: 0 auto;
 	height: 60px;
 	width: 500px;
-	background: #f0db4f;
+	background: var(--clr-primary);
 	border: none;
 	border-radius: 6px;
 	font-size: 1.5rem;
-	color: #000;
+	color: var(--cl-black);
 	cursor: pointer;
 	text-transform: uppercase;
 	animation: button 3s ease-out infinite normal;
@@ -70,7 +72,7 @@ button {
 	display: none;
 }
 .modal {
-	background: white;
+	background: var(--clr-white);
 	width: 70%;
 	padding: 30px;
 	border-radius: 6px;
@@ -91,7 +93,6 @@ button {
 		top: 50%;
 	}
 }
-
 .X {
 	position: absolute;
 	right: 20px;
